@@ -1,0 +1,660 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+/* .under-line{
+    width: 10%;
+    height: 2px;
+    margin: auto;
+    background-color: black;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+} */
+header{
+    background-color: #ff6382;
+    color: white;
+}
+header .row{
+    padding: 10px;
+}
+.header-left .fa-envelope{
+    margin-left: 20px;
+}
+.header-right{
+    text-align: right;
+    font-size: 20px;
+    border: solid 1px transparent;
+}
+.header-right i{
+    margin-right: 10px;
+    transition: all 0.2s;
+    cursor: pointer;
+    color: white;
+}
+.header-right i:hover{
+    transform: scale(1.5);
+}
+/* -------------- NAV BAR -------------------- */
+.navbar-brand--logo h1{
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.navbar-brand--logo p{
+    color: #ff6382;
+    font-size: 10px;
+    margin-left: 120px;
+    margin-bottom: 0;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+#menuNav{
+    margin-left: 200px;
+}
+.navbar-nav--menu .nav-item:hover>.nav-link{
+    color: #ff6382;
+}
+.nav-item--line{
+    width: 0%;
+    height: 2.5px;
+    border-radius: 50px;
+    background-color: #ff6382;
+}
+.navbar-nav--menu .nav-item:hover>.nav-item--line{
+    width: 100%;
+    transition: all 0.3s;
+}
+.navbar-nav--menu .nav-item{
+    margin-right: 40px;
+}
+.navbar-nav--menu .nav-item .nav-link{
+    padding-left: 0;
+    padding-right: 0;
+    font-weight: bold;
+}
+.navbar-light .navbar-nav .active>.nav-link{
+    color:#ff6382;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+/* ---------- CAROUSEL ----------- */
+.carousel-caption__config{
+    bottom: 31%;
+}
+.carousel-caption__config h1{
+    font-weight: bold;
+    font-size: 50px;
+}
+.carousel-caption__config p{
+    letter-spacing: 2px;
+}
+.carousel-indicators__config{
+    bottom: 20%;
+}
+.carousel-item img{
+    filter: brightness(50%);
+}
+.btn__readmore:hover{
+    background-color: #ff6382;
+    border: solid 1px #ff6382;
+    color: white;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+/* The modal */
+.modal-header h4{
+    color: #ff6382;
+    font-weight: bold;
+}
+.modal-body img{
+    width: 100%;
+}
+/* END CAROUSEL */
+
+/* ---------------- WELCOME TO EDUCATION ---------------- */
+section .row{
+    color: black;
+}
+        /* tilte */
+.welcome-title h2{
+    color: #ff6382;
+    font-weight: bold;
+    word-spacing: 5px;
+    margin-top: 60px;
+}
+.welcome-title span{
+    word-spacing: 3px;
+    letter-spacing: 1px;
+}
+.welcome-section .under-line{
+    width: 10%;
+    height: 3px;
+    margin: auto;
+    background-color: black;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.welcome-title p{
+    color: grey;
+    width: 85%;
+    margin: auto;
+    word-spacing: 3px;
+}
+        /* courses */
+.welcome-course{
+    margin-top: 60px;
+    border: solid 2px black;
+    padding: 0;
+}
+.welcome-course-element{
+    padding: 30px 0 30px 30px;
+}
+.welcome-course-element i{
+    font-size: 30px;
+    margin-bottom: 15px;
+} 
+.welcome-course-element h3{
+    color: #ff6382;
+    font-weight: bold;
+    font-size: 30px;
+}
+.welcome-course-element h6{
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-weight: 700;
+    word-spacing: 1px;
+}
+.welcome-course-element p{
+    color: grey;
+    font-size: 13px;
+}
+.right-border{
+    border-right: solid 2px black;
+}
+@media screen and (max-width: 576px) {
+    .right-border{
+        border-right: none;
+        border-bottom: solid 2px black;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .welcome-course-element{
+        padding-left: 10px;
+    }
+    .welcome-course-element h3{
+        color: #ff6382;
+        font-weight: bold;
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    .welcome-course-element h6{
+        font-size: 13px;
+        margin-top: 20px;
+        margin-bottom: 0;
+        font-weight: 700;
+    }
+}
+
+/* ---------- OUR STARTS -------------------- */
+.our-starts{
+    margin-top: 60px;
+}
+.our-starts{
+    background-image: url(../Image/graduate.jpg);
+    height: 350px;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.our-starts::before{ /* làm tối background img */
+    content: '';
+    display: block;
+    position: absolute; /* dùng để chạy theo phần tử 
+                cha là our-starts (đè lên phần tử cha)*/
+    background-color: #000;
+    opacity: 0.5;
+    width: 100%;
+    height: 350px;
+}
+.our-starts-title .col{
+    margin-top: 45px;
+}
+.our-starts-title .col h2{
+    color: #ff6382;
+    font-weight: bold;
+}
+.our-starts-title span{
+    letter-spacing: 2px;
+    word-spacing: 3px;
+}
+.our-starts i, .our-starts span{
+    color: white;
+}
+
+.our-starts-info{
+    margin-top: 30px;
+}
+.our-starts-info-element i{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.our-starts-info-element h3{
+    color: #ff6382;
+    font-size: 17px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+.our-starts-info-element span{
+    font-size: 40px;
+}
+@media screen and (max-width: 576px){
+    .our-starts-title span{
+        letter-spacing: 1px;
+        word-spacing: 1px;
+    }
+    .our-starts{
+        height: 280px;
+    }
+    .our-starts::before{
+        height: 280px;
+    }
+    .our-starts-info-element i{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .our-starts-info-element h3{
+        color: #ff6382;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .our-starts-info-element span{
+        font-size: 20px;
+    }
+}
+
+/* ---------------- WHAT WE OFFER--------------- */
+.offer-title h2{
+    color: #ff6382;
+    font-weight: bold;
+    word-spacing: 5px;
+    margin-top: 60px;
+}
+.offer-title span{
+    word-spacing: 3px;
+    letter-spacing: 1px;
+}
+.offer-info-element i{
+    color: #ff6382;
+    font-size: 30px;
+    margin-bottom: 15px;
+    transition: all 0.5s;
+} 
+.offer-info-element h3{
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    transition: all 0.3s;
+}
+.offer-info-element p{
+    font-size: 15px;
+    transition: all 0.3s;
+}
+.offer-info-element{
+    box-shadow: 5px 5px 10px 2px grey;
+    padding: 20px 40px 20px 40px;
+    border-radius: 5px;
+}
+.offer-under-line{
+    width: 10%;
+    height: 3px;
+    margin: auto;
+    background-color: black;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+/* animation */
+.offer-info-element::before{/*chuyển động từ trái qua phải*/
+    content: '';
+    position: absolute;
+    left: auto; /*change here*/
+    right: 0;/*change here*/
+    width: 0;
+    height: 100%;
+    background-color: #ff6382;
+    transition: all 0.4s ;
+    z-index: -1;
+    border-radius: 5px;
+    margin-top: -20px;
+}
+.offer-info-element:hover::before{
+    width: 100%;
+    left: 0;/*change here*/
+    right: auto;/*change here*/
+}
+.offer-info-element:hover>i{
+    color: white;
+}
+.offer-info-element:hover>h3{
+    color: white;
+}
+.offer-info-element:hover>p{
+    color: white;
+}
+.offer-info .col-spacing{
+    margin-right: 30px;
+}
+.offer-info{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+@media screen and (max-width: 576px) {
+    .offer-info .col-spacing{
+        margin-right: 0;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .offer-info .col-spacing{
+        margin-right: 0;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .offer-info .col-spacing{
+        margin-right: 5px;
+    }
+}
+/* ---------- TESTIMONIALS ----------- */
+.owl-nav button span{ /* chỉnh 2 nút mũi tên thành màu trắng*/
+    color: white;
+}
+
+.testimonials{
+    background-image: url(../Image/student.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 70px;
+    padding-bottom: 70px; /* tách biệt phần viền dưới
+    testimonials-slider ra khỏi section */
+}
+.testimonials-title h2{
+    color: #ff6382;
+    font-weight: bold;
+    word-spacing: 5px;
+    margin-top: 60px;
+}
+.testimonials-title span{
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    color: white;
+}
+.testimonials-under-line{
+    background-color: white;
+    width: 10%;
+    height: 2px;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.testimonials-slider{
+    background-color: rgba(0, 0, 0, 0.555);
+    box-shadow: 0px 0px 10px 4px grey;
+    padding: 20px;
+    margin: 0;
+    border-radius: 5px;
+}
+.testimonials-slider .item__box p, .testimonials-slider .item__user p{
+    color: white;
+}
+.testimonials-slider .item__box p{
+    font-size: 15px;
+}
+.testimonials-slider .item__user p{
+    margin: 0;
+    margin-left: 55px;
+    font-weight: 600;
+}
+.testimonials-slider .item__user span{
+    color: #ff6382;
+    margin-left: 5px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.item__box{
+    background-color: #ff638241;
+    border-radius: 5px;
+    padding: 10px 20px;
+    position: relative;
+    /* margin-bottom: 20px;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-top: 20px; */
+    margin: 20px 30px;
+    transition: all 0.2s;
+}
+.item__box::after{ /*mũi tên nhọn dưới box*/
+    content: '';
+    border-top: 9px solid #ff638241;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    position: absolute;
+    bottom: -9px;
+    left: 12%;
+
+    transition: all 0.2s;
+}
+.item__box:hover{
+    transform: scale(1.1);
+}
+.item__box:hover::after{
+    left: 15%;
+}
+.owl-carousel .item .item__user img{
+    width: 50px;
+    float: left;
+    border-radius: 50px;
+}
+.owl-carousel .item .item__user{
+    margin-left: 50px;
+    margin-top: 30px;
+}
+.owl-theme__edit .owl-dots .owl-dot span{
+    background: #ff6382;
+}
+@media screen and (max-width: 576px) {
+    .item__box::after{
+        left: 10%;
+    }
+    .item__box:hover::after{
+        left: 14%;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .item__box::after{
+        left: 21%;
+    }
+    .item__box:hover::after{
+        left: 23%;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .item__box::after{
+        left: 14%;
+    }
+    .item__box:hover::after{
+        left: 17%;
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .item__box::after{
+        left: 15%;
+    }
+    .item__box:hover::after{
+        left: 19%;
+    }
+}
+/* ---------------- NEWS & EVENTS ---------------- */
+.news-title h2{
+    color: #ff6382;
+    font-weight: bold;
+    word-spacing: 5px;
+    margin-top: 60px;
+}
+.news-title span{
+    word-spacing: 3px;
+    letter-spacing: 1px;
+}
+.news-content h3{
+    font-weight: 700;
+    font-size: 22px;
+}
+.news-content span{
+    color: #ff6382;
+    font-size: 15px;
+    font-weight: 700;
+}
+.news-content p{
+    color: gray;
+    margin-top: 20px;
+    font-size: 15px;
+    word-spacing: 2px;
+}
+.news-under-line{
+    width: 10%;
+    height: 3px;
+    margin: auto;
+    background-color: black;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.news-content .news-content-1{
+    margin-top: 20px;
+}
+.news-content .news-content-2{
+    margin-top: 70px;
+}
+/* ------------ FOOTER ------------ */
+footer{
+    background-color: #000000d3;
+}
+.footer-info h3, .footer-info i{
+    color: #ff6382;
+}
+.footer-info span{
+    color: rgb(170, 170, 170);
+}
+
+.footer-info{
+    margin-top: 50px;
+    padding-top: 70px;
+}
+.footer-info i{
+    margin-right: 15px;
+}
+.footer-info h3{
+    margin-bottom: 30px;
+    font-size: 22px;    
+    font-weight: 600;
+}
+.footer-info span, .footer-info i{
+    font-size: 14px;
+}
+.footer-info__contact i{
+    border: solid 1.5px #ff6382;
+    text-align: center;
+    padding: 5px;
+    width: 30px;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+
+.footer-email-input{
+    margin-top: 30px;
+}
+.footer-email-input h3{
+    color: #ff6382;
+    font-size: 22px;    
+    font-weight: 600;
+}
+.footer-email-input input{
+    width: 30rem;
+    padding: 6px;
+    border-radius: 3px;
+}
+.footer-email-input button{
+    width: 8rem;
+    padding: 6px;
+    border-radius: 3px;
+    margin-left: 10px;
+    background-color: #ff6382;
+    color: white;
+    border: solid 2px #ff6382;
+    transition: all 0.2s;
+}
+.footer-email-input button:hover{
+    cursor: pointer;
+    background-color: #ff2d57;
+    border: solid 2px #ff2d57;
+}
+
+.copyright{
+    margin: 0 auto;
+    background-color: #000;
+}
+.copyright p{
+    margin-bottom: 0;
+    text-align: center;
+    color: white;
+    margin-top: 80px;
+    font-size: 13px;
+    word-spacing: 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.copyright a{
+    text-decoration: none;
+    color: #ff6382;
+    transition: all 0.1s;
+}
+.copyright a:hover{
+    color: #ff2d57;
+}
+
+
+
+
+
+
+/* responsive */
+@media screen and (min-width: 984px) and (max-width: 1183px){
+    .navbar-brand--logo h1{
+        font-size: 30px;
+    }
+    .navbar-brand--logo p{
+        margin-left: 80px;
+    }
+    .navbar-nav--menu .nav-item{
+        margin-right: 30px;
+    }
+    .navbar-nav--menu .nav-item .nav-link{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 984px){
+    .navbar-brand--logo h1{
+        font-size: 30px;
+    }
+    .navbar-brand--logo p{
+        margin-left: 80px;
+    }
+}
